@@ -1,0 +1,20 @@
+<p>
+	template-forms works!
+</p>
+
+<div class='row'>
+	<div class='medium-centered'>
+		<form #userForm = "ngForm" (ngSubmit)="onFormSubmit(userForm.value)">
+			<input type='text' name='firstName' placeholder='firstName' ngModel>
+			<input type='text' name='lastName' placeholder='lastName' ngModel>
+			<select name='cats' ngModel>
+				<option value="meow"> Me Ow</option>
+				<option value='me-ouw'> Me Ouw</option>
+				<option value='me-yeah'> Me Yeah</option>
+				<option value='me-yea'>Me Yea</option>
+			</select>
+			<button type='submit' class='button success'> OK</button>
+		</form>
+	</div>
+	<h3 *ngIf='formSubmitVar'> Check Console </h3>
+</div>

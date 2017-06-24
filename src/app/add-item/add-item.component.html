@@ -1,0 +1,17 @@
+<p>
+	add-item works!
+</p>
+
+<div >
+	<h1 class='center'> Item List</h1>
+	<div >
+		<input [(ngModel)] = "newItem" placeholder="Add Item" type='text'>
+		<button class='button' (click) ="addItem()"> Add</button>
+	</div>
+	<ul>
+		<li *ngFor = " let i of items; let ind = index "> 
+			<span class='label primary'> {{ i }}</span> 
+			<span id='del_span' class='badge alert' (click) = removeItem(ind)> X</span>
+		</li>
+	</ul>
+</div>

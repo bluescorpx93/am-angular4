@@ -1,0 +1,14 @@
+<p>
+  pipe-practice works!
+</p>
+<p> Uppercase {{ name | uppercase}}</p>
+<p> Lowercase {{ name | lowercase}}</p>
+<p> Day {{ day }}</p>
+<p> Day (Date) {{ day | date}}</p>
+<p> Day ShortDate {{ day | date:'shortDate'}}</p>
+<p> Day LongDate {{ day | date: "longDate"}}</p>
+<P> Nested Pipes/Pipe Chaining {{ day | date: "fullDate" | uppercase }}</P>
+<p> Num Array {{num_arr}}</p>
+<p> Sorted Array <strong> {{ num_arr | sort: "asc"}} </strong> and <strong> {{ num_arr | sort: "des"}} </strong></p>
+<p> Char Array {{ char_arr}}</p>
+<p> Sorted <strong> {{char_arr | sort: "asc"}}</strong> and <strong> {{ char_arr | sort: "des"}} </strong></p>

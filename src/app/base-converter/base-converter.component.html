@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="medium-centered">
+	<h1> SUCH GARBAGE</h1>
+		<form [formGroup] = "base_converter_form" >
+			<h4 class='text-center'> Base Converter</h4>
+			<input type='text' name='decimal' placeholder='Decimal' formControlName='decimal' (ngModelChange)=' decimalChanged(oldValue, newValue = $event) '>
+			<input type='text' name='binary' placeholder='Binary' formControlName='binary' (ngModelChange)=' binaryChanged(oldValue, newValue= $event) '>
+			<input type='text' name='octal' placeholder='Octal' formControlName='octal' (ngModelChange)=' octalChanged(oldValue, newValue = $event) '>
+			<input type='text' name='hexaDecimal' placeholder='Hexadecimal' formControlName='hexaDecimal' (ngModelChange)=' hexaDecimalChanged(oldValue, newValue = $event) '>
+		</form>
+	</div>
+</div>

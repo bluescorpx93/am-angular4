@@ -1,0 +1,18 @@
+<p>
+	model-form works!
+</p>
+<div class='row'>
+	<div class='medium-centered'>
+		<form [formGroup] = "form" (ngSubmit)="onFormSubmit2(form.value)">
+			<input type='text' name='firstName' placeholder='First Name' formControlName='firstName'>
+			<input type='text' name='lastName' placeholder='Last Name' formControlName='lastName' >
+			<select name='cats' formControlName='cats'>
+				<option value='yahoo'> Yahoo</option>
+				<option value='hey'> Hey</option>
+				<option value='howdy'> Howdy</option>
+			</select>
+			<button type='submit' class='button warning' [disabled]="!form.valid" > Submit</button>
+
+		</form>
+	</div>
+</div>

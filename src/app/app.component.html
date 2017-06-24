@@ -1,0 +1,31 @@
+<div class='row'>
+	<div class="small-6 medium-6 medium-centered small-centered columns">
+		<ul class='menu'>
+			<li> <a routerLink = '/animations'> Animations</a></li>
+			<li> <a routerLink = '/base-converter'> Base Converter</a></li>
+			<li> <a routerLink="/member"> Member</a> </li>
+			<li> <a routerLink="/product"> Product</a> </li>
+			<li> <a routerLink="/pipe-practice"> Pipes</a> </li>	
+			<li> <a routerLink='/template-form'> Template Form</a> </li>	
+			<li> <a routerLink='/model-form'>Model Forms</a> </li>
+			<li> <a routerLink = '/add-task'> Add Todo </a></li>
+			<li> <a routerLink = '/service-example'> Service Ex</a></li>
+		</ul>		
+		<br>
+		<router-outlet></router-outlet>
+		
+
+		<!-- Previous Components -->
+		<div>
+			<app-practice></app-practice>
+			<app-my-component></app-my-component>
+			<hr>
+			<app-product></app-product> 
+			<br>
+			<app-members></app-members>	
+		</div>
+
+	</div>
+</div>
+
+

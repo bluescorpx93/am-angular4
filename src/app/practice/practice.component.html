@@ -1,0 +1,21 @@
+<div class='marg-top'>
+	<h4>
+		{{title}}
+	</h4>
+	{{ myObject.name}}
+	<ul> 
+		<li *ngFor = " let i of myArray">
+			{{ i }}
+		</li>
+	</ul>
+	<p *ngIf = " myBoolVar"> Hi</p>
+	<p *ngIf = " myBoolVar; then dummy_template else secTemp"></p>
+	<p *ngIf = " myBoolVar2; else firstTemp"> Hey</p>
+	<p *ngIf = " myBoolVar2; then dummy_template else secTemp"> </p>
+	<p *ngIf = " myName == 'Harry'"> Hello {{ myName}}</p>
+
+	<ng-template #dummy_template> This Dummy Template is displayed using If sth=true, THEN execute sth <br></ng-template>
+	<ng-template #firstTemp> This is an NG Template displayed because of NG Conditions <br></ng-template>
+	<ng-template #secTemp> This is the 2nd template, see code for understanding <br></ng-template>
+
+</div>
